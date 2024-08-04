@@ -16,10 +16,6 @@ from homeassistant.const import STATE_OK, STATE_UNAVAILABLE, STATE_UNKNOWN, Unit
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers import device_registry, entity_component, entity_registry
 import homeassistant.helpers.config_validation as cv
-import voluptuous as vol
-import websockets.protocol
-import websockets.server
-
 from ocpp.exceptions import NotImplementedError
 from ocpp.messages import CallError
 from ocpp.routing import on
@@ -48,6 +44,9 @@ from ocpp.v16.enums import (
     UnitOfMeasure,
     UnlockStatus,
 )
+import voluptuous as vol
+import websockets.protocol
+import websockets.server
 
 from .const import (
     CONF_AUTH_LIST,
