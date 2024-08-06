@@ -2,6 +2,10 @@
     "name": "lbbrhzn/ocpp",
     "image": "mcr.microsoft.com/devcontainers/python:3.12-bullseye",
     "onCreateCommand": "scripts/setup",
+    "appPort": [
+        "8123:8123",
+        "9000:9000"
+    ],
     "forwardPorts": [
         8123
     ],
